@@ -1,11 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { fetchRockets } from '../API/apiRockets';
+import fetchRockets from '../API/apiRockets';
 
 const initialState = {
   rockets: [],
   status: false,
 };
-
 
 const rocketsSlice = createSlice({
   name: 'rockets',

@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const BaseURL = 'https://api.spacexdata.com/v4/rockets';
 
-export const fetchRockets = createAsyncThunk('rockets/fetchRockets', async () => {
+const fetchRockets = createAsyncThunk('rockets/fetchRockets', async () => {
   const response = await axios.get(BaseURL);
   const rockets = response.data;
   return rockets.map((rocket) => (
@@ -15,3 +15,4 @@ export const fetchRockets = createAsyncThunk('rockets/fetchRockets', async () =>
     }
   ));
 });
+export default fetchRockets;

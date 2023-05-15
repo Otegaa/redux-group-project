@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import {  reserveRocket } from '../features/rocketSlice';
-import { fetchRockets } from '../API/apiRockets';
+import { reserveRocket } from '../features/rocketSlice';
+import fetchRockets from '../API/apiRockets';
 
 const Rockets = () => {
   const dispatch = useDispatch();
@@ -18,7 +18,7 @@ const Rockets = () => {
         <div key={each.id} className="article">
           <img src={each.image} className="img" alt={each.name} />
           <div>
-            <h2 className='title'>{each.name}</h2>
+            <h2 className="title">{each.name}</h2>
             <p className="rocketDetails">
               {each.reserved ? <span className="span">Reserved</span> : ''}
               {each.description}
