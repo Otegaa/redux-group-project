@@ -10,5 +10,6 @@ root.render(
     <Provider store={Store}>
       <App />
     </Provider>
+
   </React.StrictMode>,
 );
