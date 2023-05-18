@@ -111,7 +111,7 @@ To run tests, run the following command:
 
 - GitHub: [@ridabensalem](https://github.com/ridabensalem/)
 - Twitter: [@coder_rida](https://twitter.com/coder_rida)
-- LinkedIn: [ridabesalem](https://linkedin.com/in/ridabensalem)
+- LinkedIn: [ridabesalem](https://www.linkedin.com/in/rida-bensalem/)
 
 👤 **Author2**
 
