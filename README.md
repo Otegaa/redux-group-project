@@ -109,7 +109,7 @@ To run tests, run the following command:
 
 👤 **Author1**
 
-- GitHub: [@ridabensalem](https://github.com/ridabnesalem)
+- GitHub: [@ridabensalem](https://github.com/ridabensalem/)
 - Twitter: [@coder_rida](https://twitter.com/coder_rida)
 - LinkedIn: [ridabesalem](https://linkedin.com/in/ridabensalem)
 
