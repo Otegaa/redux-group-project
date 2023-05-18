@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
+import { joinMission } from '../features/MissionsSlice';
 import fetchMissions from '../API/apiMissions';
 
 const Missions = () => {
@@ -11,12 +12,6 @@ const Missions = () => {
     if (loading === false) dispatch(fetchMissions());
   }, [dispatch, loading]);
 
-  if (loading) {
-    <div>
-      <h1>Loading...</h1>
-    </div>;
-  }
-
   return (
     <div>
       <table>
@@ -27,28 +22,34 @@ const Missions = () => {
             <th>Status</th>
             <th>&nbsp;</th>
           </tr>
-          <tr>
-            {missions.map((mission) => {
-              const {
-                mission_id: id,
-                mission_name: name,
-                description,
-              } = mission;
 
-              return (
-                <div key={id}>
-                  <td>{name}</td>
-                  <td>{description}</td>
-                  <td>
-                    <button type="button">Not a member</button>
-                  </td>
-                  <td>
-                    <button type="button">Join mission</button>
-                  </td>
-                </div>
-              );
-            })}
-          </tr>
+          {missions.map((mission) => {
+            const { mission_id: id, mission_name: name, description } = mission;
+            // console.log(id);
+
+            return (
+              <tr key={id}>
+                <td>{name}</td>
+                <td>{description}</td>
+                <td>
+                  <button type="button">
+                    {mission.reserved ? 'Active member' : 'Not a member'}
+                  </button>
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      console.log(id);
+                      dispatch(joinMission(id));
+                    }}
+                  >
+                    {mission.reserved ? 'Leave mission' : 'Join mission'}
+                  </button>
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>
