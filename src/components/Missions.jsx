@@ -13,10 +13,15 @@ const Missions = () => {
   }, [dispatch, loading]);
 
   return (
-    <div>
-      <table>
+    <div className="tableContainer">
+      <table className="table">
+        <colgroup>
+          <col className="col1" />
+          <col className="col2" />
+        </colgroup>
+
         <tbody>
-          <tr>
+          <tr className="tableHeading">
             <th>Mission</th>
             <th>Description</th>
             <th>Status</th>
@@ -34,16 +39,20 @@ const Missions = () => {
 
             return (
               <tr key={id}>
-                <td>{name}</td>
+                <th>{name}</th>
                 <td>{description}</td>
                 <td>
-                  <button type="button">
+                  <button
+                    type="button"
+                    className={reserved ? 'activeMember' : 'notActive'}
+                  >
                     {reserved ? 'Active member' : 'Not a member'}
                   </button>
                 </td>
                 <td>
                   <button
                     type="button"
+                    className={reserved ? 'activeMission' : 'notActiveMission'}
                     onClick={() => {
                       dispatch(joinMission(id));
                     }}
