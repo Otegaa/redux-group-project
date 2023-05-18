@@ -1,4 +1,4 @@
-import { createSlice, current } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 import fetchMissions from '../API/apiMissions';
 
 const initialState = {
@@ -11,13 +11,14 @@ const missionSlice = createSlice({
   initialState,
   reducers: {
     joinMission: (state, { payload }) => {
-      console.log(payload);
-      const newState = state.missions.map((mission) => {
-        if (mission.id === payload) return { ...mission, reserved: !mission.reserved };
-        console.log(current(state));
+      const updatedMissions = state.missions.map((mission) => {
+        if (mission.mission_id === payload) {
+          return { ...mission, reserved: !mission.reserved };
+        }
         return mission;
       });
-      return { ...state, newState };
+
+      return { ...state, missions: updatedMissions };
     },
   },
   extraReducers: (builder) => {

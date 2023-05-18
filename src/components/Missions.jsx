@@ -24,7 +24,12 @@ const Missions = () => {
           </tr>
 
           {missions.map((mission) => {
-            const { mission_id: id, mission_name: name, description } = mission;
+            const {
+              mission_id: id,
+              mission_name: name,
+              description,
+              reserved,
+            } = mission;
             // console.log(id);
 
             return (
@@ -33,18 +38,17 @@ const Missions = () => {
                 <td>{description}</td>
                 <td>
                   <button type="button">
-                    {mission.reserved ? 'Active member' : 'Not a member'}
+                    {reserved ? 'Active member' : 'Not a member'}
                   </button>
                 </td>
                 <td>
                   <button
                     type="button"
                     onClick={() => {
-                      console.log(id);
                       dispatch(joinMission(id));
                     }}
                   >
-                    {mission.reserved ? 'Leave mission' : 'Join mission'}
+                    {reserved ? 'Leave mission' : 'Join mission'}
                   </button>
                 </td>
               </tr>
