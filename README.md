@@ -1,13 +1,11 @@
 <a name="readme-top"></a>
 
-
 <div align="center">
   <br/>
 
-  <h3><b>Space Travelers Hub  README</b></h3>
+  <h3><b>Space Travelers Hub README</b></h3>
 
 </div>
-
 
 # 📗 Table of Contents
 
@@ -30,12 +28,13 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Space Traveler  ] <a name="about-project"></a>
-**[Space Traveler ]** is  a website that display a list of space rockets and display its informations
+# 📖 [Space Travelers Hub ] <a name="about-project"></a>
 
-## 🛠 Built With <a name="built-with"></a>
+**[Space Travelers Hub ]** is a website that display a list of space rockets and missions, and how to reserve them.
 
-### Tech Stack <a name="tech-stack"></a>
+## 🛠 Built With <a name="built-with">React.js</a>
+
+### Tech Stack <a name="tech-stack">CSS</a>
 
 <details>
   <summary>Client</summary>
@@ -44,31 +43,24 @@
 
     <li><a href="#">JSX</a></li>
      <li><a href="#">Js</a></li>
+
   </ul>
 </details>
 
-
-
-
-
 ### Key Features <a name="key-features"></a>
 
-
-- **[Display a list of Rockets ]**
-- **[Display a couple of missions for each rocket  ]**
-- **[Displaying the profile section ]**
+- **[Display a list of Rockets and how to reserve them]**
+- **[Display a couple of missions for each rocket and how to reserve them]**
+- **[Displaying the profile section that shows whether you have reserved a rocket or mission]**
+  **[State is managed with Redux]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
+
 [N/A]
 
-
-
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -80,45 +72,38 @@ To get a local copy up and running, follow these steps.
 
 - [git](https://git-scm.com/downloads): A tool for managing source code
 - [Visual Studio Code](https://code.visualstudio.com/): A source code editor
-- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer): A simple web server utility for Visual Studio Code
+- [Node.js](https://nodejs.org/en): Node.js is an open-source, cross-platform JavaScript runtime environment.
 
 ### Setup
 
 Clone this repository to your desired folder:
-https://github.com/ridabensalem/Space-Travelers-Hub.git
- Example commands:
+https://github.com/Otegaa/redux-group-project.git
+Example commands:
 
 ```sh
-  cd my-folder
-  https://github.com/ridabensalem/Space-Travelers-Hub.git
+  cd redux-group-project
+  https://github.com/Otegaa/redux-group-project.git
 ```
 
 ### Install
 
 Install this project with:
 
-` cd my-project
-  - Run npm install after cloning the repo
+- Run npm install after cloning the repo
 
 ### Usage
 
 ### Usage
 
-- Run npm start for development. 
+- Run npm start for development.
+- This runs the application in the development mode
+- Open http://localhost:3000/ to view it in the browser.
 - Run npm run build for production
-
 
 ### Run tests
 
 To run tests, run the following command:
 ` npm run test`
-
-
-### Deployment
-
-You can deploy this project using:
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -133,16 +118,11 @@ You can deploy this project using:
 - GitHub: [@Otegaa](https://github.com/Otegaa)
 - LinkedIn: [blessing-ekiugbo](https://www.linkedin.com/in/blessing-ekiugbo/)
 
-
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Full navigation of the page ]**
-- [ ] **[Improve the UI/UX design  ]**
-- [ ] **[Add more Features of searching the Rockets and missions ]**
+- [ ] **[Implement mobile view for app]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -150,13 +130,13 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Otegaa/redux-group-project/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project please give it a start and share it with your friends. 
+If you like this project please give it a star and share it with your friends.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -164,11 +144,10 @@ If you like this project please give it a start and share it with your friends.
 
 I would like to appreciate[Microverse](https://www.microverse.org/) for providing the resources and the platform for us to be a Professional full-stack developer.
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](https://github.com/Otegaa/redux-group-project/blob/dev/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

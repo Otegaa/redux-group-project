@@ -35,7 +35,6 @@ const Missions = () => {
               description,
               reserved,
             } = mission;
-            // console.log(id);
 
             return (
               <tr key={id}>
